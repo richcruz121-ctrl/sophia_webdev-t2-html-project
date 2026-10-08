@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Preorders | North Star Bakery</title>
+</head>
+<body>
+  <a href="#main-content">Home</a>
+  <header>
+    <img src="media/bakery-logo_c.png" width="150"
+         alt="North Star Bakery logo with a loaf and wheat stalk">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact and Preorders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Contact and Preorders</h1>
+    <p>Tell us what you're planning, whether it's a loaf for tomorrow
+      or treats for a gathering today. A preorder request is not a confirmed order.</p>
+
+    <section>
+      <h2>Visit the bakery</h2>
+      <address>North Star Bakery<br>123 Maple Street</address>
+      <h3>Hours of operation</h3>
+      <ul>
+        <li>Tuesday through Friday: 7 a.m. to 5 p.m.</li>
+        <li>Saturday and Sunday: 8 a.m. to 2 p.m.</li>
+        <li>Monday: Closed.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Send an inquiry or preorder request</h2>
+      <p id="form-help">Fields marked required must be completed.
+        For preorders, include a pickup date and the items and quantities.</p>
+      <!-- This HTML practice form has no order-processing service. -->
+      <form action="contact.html#request-form" method="get"
+            id="request-form" aria-describedby="form-help demo-note">
+        <fieldset>
+          <legend>Your contact information</legend>
+          <p>
+            <label for="customer-name">Name (required)</label><br>
+            <input type="text" id="customer-name" name="customer_name"
+                   autocomplete="name" maxlength="100" required>
+          </p>
+          <p>
+            <label for="email">Email (required)</label><br>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your request</legend>
+          <p>
+            <label for="request-type">Request type (required)</label><br>
+            <select id="request-type" name="request_type" required>
+              <option value="">Choose a request type</option>
+              <option value="preorder">Preorder</option>
+              <option value="question">General question</option>
+            </select>
+          </p>
+          <p>
+            <label for="pickup-date">Preferred pickup date</label><br>
+            <input type="date" id="pickup-date" name="pickup_date"
+                   aria-describedby="pickup-help">
+            <br><small id="pickup-help">Leave blank for a general question.
+              We will need to confirm your requested date.</small>
+          </p>
+          <p>
+            <label for="item-details">Item details or question (required)</label>
+            <br><textarea id="item-details" name="item_details" rows="5"
+                          cols="30" minlength="10" maxlength="1500"
+                          aria-describedby="details-help" required></textarea>
+            <br><small id="details-help">Use at least 10 characters.
+              For orders, include item names and quantities.</small>
+          </p>
+          <p>
+            <label for="allergy-notes">Allergy notes (optional)</label><br>
+            <textarea id="allergy-notes" name="allergy_notes" rows="3"
+                      cols="30" maxlength="1000"></textarea>
+          </p>
+        </fieldset>
+        <p id="demo-note">NOTE - This is a practice form. Use sample information;
+          submitting it does not send a request to the bakery.</p>
+        <button type="submit">Submit practice request</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+    <p><a href="contact.html">Ask a question or request a preorder</a></p>
+  </footer>
+</body>
+</html>
