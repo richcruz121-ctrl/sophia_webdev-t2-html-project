@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact and Preorders | North Star Bakery</title>
 <link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -44,8 +43,6 @@
       <p id="form-help">Fields marked required must be completed.
         For preorders, include a pickup date and the items and quantities.</p>
       <!-- This HTML practice form has no order-processing service. -->
-      <p><button type="button" id="use-favorites" disabled>Use saved favorites</button></p>
-      <p id="favorites-help" role="status"></p>
       <form action="contact.html#request-form" method="get" id="request-form" aria-describedby="form-help demo-note">
         <fieldset>
           <legend>Your contact information</legend>
@@ -88,7 +85,6 @@
         </fieldset>
         <p id="demo-note">This is a practice form. Use sample information;
           submitting it does not send a request to the bakery.</p>
-        <p id="form-status" role="status" tabindex="-1"></p>
         <button type="submit">Submit practice request</button>
       </form>
     </section>

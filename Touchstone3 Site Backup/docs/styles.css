@@ -167,12 +167,3 @@ footer a:focus-visible { outline-color: var(--cream); }
   .request-section { flex: 2 1 0; }
   fieldset { padding: 1.5rem; }
 }
-
-/* Touchstone 4: controls follow the existing bakery palette. */
-.favorite-options { display: flex; flex-wrap: wrap; gap: .75rem; }
-.favorite-options button { flex: 1 1 13rem; }
-.favorite-options button[aria-pressed="true"] { background: #FFF8F0; color: #6B3E26; border: 2px solid #6B3E26; }
-.field-error { display: block; color: #6B3E26; font-weight: bold; margin-top: .35rem; }
-[aria-invalid="true"] { border: 2px solid #6B3E26; }
-button:disabled { opacity: .65; cursor: default; }
-#form-status:not(:empty), #favorite-status:not(:empty) { border-left: 4px solid #6B3E26; padding-left: .75rem; }
